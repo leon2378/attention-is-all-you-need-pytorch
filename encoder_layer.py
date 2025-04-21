@@ -18,4 +18,6 @@ class EncoderLayer(nn.Module):
         self.norm2 = nn.LayerNorm(d_model)
         self.dropout = nn.Dropout(dropout)
 
-    
+    def forward(self, x, mask):
+        attn_output = self.self_attn(x, x, x, mask)
+        x = self.norm1(x + self)
