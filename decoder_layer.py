@@ -26,3 +26,8 @@ class DecoderLayer(nn.Module):
     def forward(self, x, enc_output, src_mask, tgt_mask):
         attn_output = self.self_attn(x, x, x, tgt_mask)
         x = self.norm1(x + self.dropout(attn_output))
+        attn_output = self.cross_attn(x, enc_output, enc_output, src_mask)
+        x = self.norm2(x + self.dropout(attn_output))
+        ff_output = self.feed_forward(x)
+        x = self.norm3(x + self.dropout(ff_output))
+        return x
