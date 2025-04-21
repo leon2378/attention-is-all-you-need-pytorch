@@ -6,7 +6,7 @@ import math
 import copy
 from multihead_attention import MultiHeadAttention
 from position_wise_feed_forward_networks import PositionWiseFeedForward
-from positional_encoding import PositionalEncoding
+#from positional_encoding import PositionalEncoding
 
 class EncoderLayer(nn.Module):
     def __init__(self, d_model, num_heads, d_ff, dropout):
