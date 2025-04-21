@@ -4,8 +4,8 @@ import torch.optim as optim
 import torch.utils.data as data
 import math
 import copy
-import multihead_attention.py
-import position_wise_feed_forward_networks.py
+import multihead_attention
+import position_wise_feed_forward_networks
 
 
 class PositionalEncoding(nn.Module):
