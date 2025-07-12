@@ -1,4 +1,4 @@
-# 🧠 Transformer Model from Scratch with PyTorch
+# Transformer Model from Scratch with PyTorch
 
 This project demonstrates a full implementation of the **Transformer architecture** using PyTorch, from basic components like Multi-Head Attention and Positional Encoding to a complete encoder-decoder model suitable for sequence-to-sequence tasks (e.g., machine translation).
 
@@ -100,7 +100,7 @@ Model trained on synthetic data, demonstrating convergence and functionality of 
 
 ---
 
-## 🧠 Credits
+## Credits
 
 Inspired by the seminal paper:  
 [**Attention is All You Need** (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
