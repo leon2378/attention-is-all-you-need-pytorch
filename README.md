@@ -107,6 +107,6 @@ Inspired by the seminal paper:
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
